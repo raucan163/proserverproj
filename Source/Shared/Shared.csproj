@@ -35,12 +35,18 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xfnet, Version=1.0.3562.20814, Culture=neutral, PublicKeyToken=d4a3c4545787dd45, processorArchitecture=x86" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\IniFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <Content Include="Library\xfnet.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Documentation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
